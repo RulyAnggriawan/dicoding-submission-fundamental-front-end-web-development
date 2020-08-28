@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header{
+    display: inline;
+}
+
+header>div{
+    text-align: center;
+    /* background-color: black; */
+    color: aliceblue;
+    /* padding: 20px 0 0 0; */
+    width: 100%;
+}
+
+header p{
+    margin: 0;
+}
+nav{
+    position:sticky;
+    top:0; 
+    background-color: black;
+    z-index: 20;
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 10px;
+    position: sticky;
+    bottom: 0px;
+    width: 100%;
+}
+
+
+
+nav ul{
+    margin: 0;
+    text-align: center;
+}
+
+nav li{
+    display: inline-block; 
+    padding: 20px;
+}
+
+nav a{
+    font-size: xx-large;
+}
+
+.container{
+    background-color: #E9E9E9;
+
+    padding: 30px 20px;
+    min-height: 800px;
+}
+
+.polaroid {
+    width: 300px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+
+    box-shadow: 10px 10px 5px #aaaaaa;
+    display: inline-block;
+    margin: 30px;
+  }
+
+  .polaroid p{
+      display: inline;
+      
+  }
+
+  #meal-list ul{
+      padding: 0;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 10px auto;
+
+  }
+  
+  #meal-list li{
+      display: inline;
+      list-style-type: none;
+  }
+
+  .box-container{
+    display: flex;
+  }
+
+  .box{
+      flex-grow: 1;
+  }
+
+  .right{
+      text-align: right;
+  }
+
+  /* *{
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+ } */
+
+  
+

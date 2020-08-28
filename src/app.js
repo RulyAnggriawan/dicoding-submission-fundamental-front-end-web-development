@@ -1,5 +1,8 @@
 import "../styles/style.css";
-import "./skewed-box.js"
+import "../styles/searchbar.css";
+import "./skewed-box.js";
+
+import '@fortawesome/fontawesome-free/js/all';
 
 const searchButtonElement = document.querySelector("#search-button-element");
 const searchElement = document.querySelector("#search-element");
@@ -28,7 +31,20 @@ const render = (meals) => {
     const ul = document.createElement("ul");
     meals.forEach( meal => {
         const li = document.createElement("li");
-        li.innerHTML = `${meal.strMeal}`;
+        // li.innerHTML = `${meal.strMeal}`;
+
+        const div = document.createElement("div");
+        div.innerHTML = `
+        <div class="polaroid">
+            <section>
+                <h6>${meal.strMeal}</h6>
+                <img src="${meal.strMealThumb}" alt="${meal.strMeal}" width="100%" >
+                <p class="caption">${meal.strCategory}</p>
+            </section>
+        </div>
+        `;
+        li.appendChild(div);
+
         ul.appendChild(li);
         console.log(meal);
     });

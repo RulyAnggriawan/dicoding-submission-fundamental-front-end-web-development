@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start-dev": "webpack-dev-server --config webpack.dev.js --open",
-    "build" : "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -29,5 +29,8 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^5.1.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0"
   }
 }
