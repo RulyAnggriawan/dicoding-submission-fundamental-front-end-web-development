@@ -10,14 +10,27 @@ module.exports = {
    module: {
        rules: [
            {
-               test: /\.css$/,
+               test: /\.(css|scss)$/,
                use: [
                    {
                        loader: "style-loader"
                    },
                    {
                        loader: "css-loader"
-                   }
+                   },
+                   {
+                    loader: 'postcss-loader', // Run postcss actions
+                    options: {
+                        plugins: function () { // postcss plugins, can be exported to postcss.config.js
+                                return [
+                                    require('autoprefixer')
+                                ];
+                            }
+                        }
+                    }, 
+                    {
+                        loader: 'sass-loader' // compiles Sass to CSS
+                    }
                ]
            }
        ]
