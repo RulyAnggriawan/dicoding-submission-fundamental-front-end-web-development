@@ -23,29 +23,6 @@ main > .container {
     bottom: 25px;
     right: 25px;
     display: none;
-}
-
-.flex-container{
-    background-color: aqua;
-    display: flex;
-    flex-direction: column !important;
-}
-
-.flex-row{
-    display: flex;
-    /* flex-direction: row; */
-    /* flex-direction: column !important; */
-}
-
-.flex-box{
-    background-color: azure;
-    flex-grow: 1;
-    border: 1px solid black;
-    flex-basis: 25%;
-}
-
-@media screen and (max-width: 768px){
-    .flex-row{
-        flex-direction: column !important;
-    }
+    background-color: #0074F9;
+    color: white;
 }

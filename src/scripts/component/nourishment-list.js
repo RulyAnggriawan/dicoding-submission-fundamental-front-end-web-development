@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 import NourishmentCard from './nourishment-card';
 
 class NourishmentList extends HTMLElement {

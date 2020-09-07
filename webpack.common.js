@@ -37,6 +37,7 @@ module.exports = {
    },
    plugins: [
        new HtmlWebpackPlugin({
+           inject: true,
            template: "./src/index.html",
            filename: "index.html",
            scriptLoading: "defer"
