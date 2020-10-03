@@ -1,9 +1,12 @@
 {
+  "homepage": "https://rulyanggriawan.github.io/food-drink-finder",
   "name": "dicoding-submission-fundamental-front-end-web-development",
   "version": "1.0.0",
   "description": "dicoding submission - fundamental front end web development - ruly anggriawan",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start-dev": "webpack-dev-server --config webpack.dev.js --open",
     "build": "webpack --config webpack.prod.js"
   },
@@ -28,6 +31,7 @@
     "eslint": "^7.8.1",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
+    "gh-pages": "^3.1.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
     "node-sass": "^4.14.1",
